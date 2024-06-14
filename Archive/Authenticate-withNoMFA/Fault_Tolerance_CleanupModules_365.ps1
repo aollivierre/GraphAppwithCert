@@ -1,0 +1,12 @@
+Get-Module -Name "MSOnline" -ListAvailable -all | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "Microsoft.Exchange.Management.ExoPowershellModule" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "ExchangeOnline" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "CreateExoPsSession" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "SkypeOnlineConnector" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "AzureAD" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "AzureADPreview" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "MicrosoftTeams" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "Microsoft.Online.SharePoint.PowerShell" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "SharePointPnPPowerShellOnline" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "AzureRM" -ListAvailable -all  | Uninstall-Module -Allversions -Force -verbose
+Get-Module -Name "Az" -ListAvailable -all | Uninstall-Module -Allversions -Force -verbose

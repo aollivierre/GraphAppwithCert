@@ -1,0 +1,29 @@
+Example 5: Connect using a Managed Service Identity
+This example connects using the Managed Service Identity (MSI) of the host environment. For example, you sign into Azure from a virtual machine that has an assigned MSI.
+
+PowerShell
+
+Copy
+
+Try It
+Connect-AzAccount -Identity
+
+Account                SubscriptionName TenantId                Environment
+-------                ---------------- --------                -----------
+MSI@50342              Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud
+
+Example 6: Connect using Managed Service Identity login and ClientId
+This example connects using the Managed Service Identity of myUserAssignedIdentity. It adds the user assigned identity to the virtual machine, then connects using the ClientId of the user assigned identity. For more information, see Configure managed identities for Azure resources on an Azure VM.
+
+PowerShell
+
+Copy
+
+Try It
+$identity = Get-AzUserAssignedIdentity -ResourceGroupName 'myResourceGroup' -Name 'myUserAssignedIdentity'
+Get-AzVM -ResourceGroupName contoso -Name testvm | Update-AzVM -IdentityType UserAssigned -IdentityId $identity.Id
+Connect-AzAccount -Identity -AccountId $identity.ClientId # Run on the virtual machine
+
+Account                SubscriptionName TenantId                Environment
+-------                ---------------- --------                -----------
+yyyy-yyyy-yyyy-yyyy    Subscription1    xxxx-xxxx-xxxx-xxxx     AzureCloud

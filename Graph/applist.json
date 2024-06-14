@@ -1,0 +1,1061 @@
+[
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
+        {
+          "AdminConsentDescription": "Allow the application to access P2P Server on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access P2P Server",
+          "Id": "cc4b04a8-ee9f-4d38-9599-464af07c0058",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access P2P Server on your behalf.",
+          "UserConsentDisplayName": "Access P2P Server",
+          "Value": "user_impersonation"
+        }
+      ],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "0ef704a1-369f-4a13-bb8e-802fcf7f3931",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2022-11-25T05:13:48Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "P2P Server",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "4562d13c-6139-4682-84bf-b6165210e4dd",
+    "IdentifierUris": [
+      "urn:p2p_cert"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": false,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
+        {
+          "AdminConsentDescription": "Allow the application to access Keeper Password Manager on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access Keeper Password Manager",
+          "Id": "be09afbb-6f0b-4868-a586-8903a4605c7f",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access Keeper Password Manager on your behalf.",
+          "UserConsentDisplayName": "Access Keeper Password Manager",
+          "Value": "user_impersonation"
+        }
+      ],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "b71eacd2-8efb-4da3-9b3f-599056085089",
+    "AppManagementPolicies": null,
+    "AppRoles": [
+      {
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Description": "User",
+        "DisplayName": "User",
+        "Id": "63a9859a-24d2-4d35-a412-b97549968424",
+        "IsEnabled": true,
+        "Origin": "Application",
+        "Value": null
+      },
+      {
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Description": "msiam_access",
+        "DisplayName": "msiam_access",
+        "Id": "866eafc7-b55a-4527-b0aa-5ca60a8c2a78",
+        "IsEnabled": true,
+        "Origin": "Application",
+        "Value": null
+      }
+    ],
+    "ApplicationTemplateId": "e22a9859-36f3-4d23-abe9-cf4aac67f04b",
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2022-12-16T18:08:37Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": "https://keepersecurity.ca/api/rest/sso/saml/sso/1361504632841",
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "Keeper Password Manager",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "6d312dd9-6942-45a0-bf0f-71f3acc4a1ba",
+    "IdentifierUris": [
+      "https://keepersecurity.ca/api/rest/sso/saml/1361504632841"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": false,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": "https://keepersecurity.com/api/rest/sso/saml/*?metadata=keeperpasswordmanager|ISV9.1|primary|z",
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": "https://keepersecurity.ca/api/rest/sso/saml/slo/1361504632841",
+      "RedirectUriSettings": [
+        {
+          "Index": 0,
+          "Uri": "https://keepersecurity.ca/api/rest/sso/saml/sso/1361504632841"
+        }
+      ],
+      "RedirectUris": [
+        "https://keepersecurity.ca/api/rest/sso/saml/sso/1361504632841"
+      ]
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
+        {
+          "AdminConsentDescription": "Allow the application to access SharePoint Online Client Extensibility Web Application Principal on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access SharePoint Online Client Extensibility Web Application Principal",
+          "Id": "ee1c04a6-b817-4987-9a6c-fa86f77c8a1d",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access SharePoint Online Client Extensibility Web Application Principal on your behalf.",
+          "UserConsentDisplayName": "Access SharePoint Online Client Extensibility Web Application Principal",
+          "Value": "user_impersonation"
+        }
+      ],
+      "PreAuthorizedApplications": [
+        {
+          "AppId": "08e18876-6177-487e-b8b5-cf950c1e598c",
+          "DelegatedPermissionIds": [
+            "ee1c04a6-b817-4987-9a6c-fa86f77c8a1d"
+          ]
+        },
+        {
+          "AppId": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+          "DelegatedPermissionIds": [
+            "ee1c04a6-b817-4987-9a6c-fa86f77c8a1d"
+          ]
+        },
+        {
+          "AppId": "00000003-0000-0ff1-ce00-000000000000",
+          "DelegatedPermissionIds": [
+            "ee1c04a6-b817-4987-9a6c-fa86f77c8a1d"
+          ]
+        },
+        {
+          "AppId": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346",
+          "DelegatedPermissionIds": [
+            "ee1c04a6-b817-4987-9a6c-fa86f77c8a1d"
+          ]
+        }
+      ],
+      "RequestedAccessTokenVersion": 1
+    },
+    "AppId": "f36cf1bb-d97b-4e78-b79d-ff86abf4fa54",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2023-04-12T19:28:30Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "SharePoint Online Client Extensibility Web Application Principal",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "7d1d9c43-aab3-4418-8141-c937d5a4034b",
+    "IdentifierUris": [
+      "api://b5dae566-ad8f-44e1-9929-5669f1dbb343/microsoft.spfx3rdparty.com",
+      "api://b5dae566-ad8f-44e1-9929-5669f1dbb343/ictcctic.sharepoint.com"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [
+      {
+        "CustomKeyIdentifier": [
+          121,
+          226,
+          212,
+          12,
+          82,
+          21,
+          91,
+          79,
+          141,
+          135,
+          218,
+          103,
+          111,
+          66,
+          91,
+          244
+        ],
+        "DisplayName": null,
+        "EndDateTime": "2073-04-12T19:28:31.721387Z",
+        "Hint": "291",
+        "KeyId": "0c31d1fb-bbdb-44d9-aa62-37f0a381448c",
+        "SecretText": null,
+        "StartDateTime": "2023-04-12T19:28:31.721387Z"
+      }
+    ],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": true,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [
+        {
+          "Index": null,
+          "Uri": "https://fluidpreview.office.net/spfxsinglesignon"
+        },
+        {
+          "Index": null,
+          "Uri": "https://dev.fluidpreview.office.net/spfxsinglesignon"
+        },
+        {
+          "Index": null,
+          "Uri": "https://ictcctic-admin.sharepoint.com/_forms/spfxsinglesignon.aspx"
+        },
+        {
+          "Index": null,
+          "Uri": "https://ictcctic.sharepoint.com/_forms/spfxsinglesignon.aspx?redirect"
+        },
+        {
+          "Index": null,
+          "Uri": "https://ictcctic.sharepoint.com/_forms/spfxsinglesignon.aspx"
+        },
+        {
+          "Index": null,
+          "Uri": "https://ictcctic.sharepoint.com/"
+        }
+      ],
+      "RedirectUris": [
+        "https://fluidpreview.office.net/spfxsinglesignon",
+        "https://dev.fluidpreview.office.net/spfxsinglesignon",
+        "https://ictcctic-admin.sharepoint.com/_forms/spfxsinglesignon.aspx",
+        "https://ictcctic.sharepoint.com/_forms/spfxsinglesignon.aspx?redirect",
+        "https://ictcctic.sharepoint.com/_forms/spfxsinglesignon.aspx",
+        "https://ictcctic.sharepoint.com/"
+      ]
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
+        {
+          "AdminConsentDescription": "Allow the application to access ESET CyberTraining on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access ESET CyberTraining",
+          "Id": "d91d0e25-ce6e-402f-946d-c3ba4448431f",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access ESET CyberTraining on your behalf.",
+          "UserConsentDisplayName": "Access ESET CyberTraining",
+          "Value": "user_impersonation"
+        }
+      ],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "99d72c7b-5dbe-4585-8283-4f834b334ee4",
+    "AppManagementPolicies": null,
+    "AppRoles": [
+      {
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Description": "User",
+        "DisplayName": "User",
+        "Id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+        "IsEnabled": true,
+        "Origin": "Application",
+        "Value": null
+      },
+      {
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Description": "msiam_access",
+        "DisplayName": "msiam_access",
+        "Id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
+        "IsEnabled": true,
+        "Origin": "Application",
+        "Value": null
+      }
+    ],
+    "ApplicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-04-05T12:34:23Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": "https://eset.testingcenter.net/members_log_in_sso/ba63ebb1-52e5-4ed3-a7ab-e44c9c76fadf",
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "ESET CyberTraining",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "8a29c728-e887-4d5b-87c6-f103117c5b37",
+    "IdentifierUris": [
+      "https://eset.testingcenter.net/members_log_in_sso/ba63ebb1-52e5-4ed3-a7ab-e44c9c76fadf"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": false,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": "https://eset.testingcenter.net/members_log_in_sso/ba63ebb1-52e5-4ed3-a7ab-e44c9c76fadf",
+      "RedirectUriSettings": [
+        {
+          "Index": 0,
+          "Uri": "https://eset.testingcenter.net/members_log_in_sso/ba63ebb1-52e5-4ed3-a7ab-e44c9c76fadf"
+        }
+      ],
+      "RedirectUris": [
+        "https://eset.testingcenter.net/members_log_in_sso/ba63ebb1-52e5-4ed3-a7ab-e44c9c76fadf"
+      ]
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "b3b9dabe-20d1-49d8-97dc-199ab1c2cd5c",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-05-29T18:44:15Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "001-GetAllSignInLogs-Prep-for-Conditional-Access-Require-Device-Marked-Compliant",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "d263e734-c50d-46e6-aecd-9fd71bd0d3c2",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [
+      {
+        "CustomKeyIdentifier": null,
+        "DisplayName": "Password uploaded on Mon Jun 03 2024",
+        "EndDateTime": "2024-09-01T15:45:34.462Z",
+        "Hint": "_nv",
+        "KeyId": "91759e45-7ee0-4da8-99b1-e6ebe34068be",
+        "SecretText": null,
+        "StartDateTime": "2024-06-03T15:45:34.462Z"
+      }
+    ],
+    "PublicClient": {
+      "RedirectUris": [
+        "ms-appx-web://microsoft.aad.brokerplugin/b3b9dabe-20d1-49d8-97dc-199ab1c2cd5c",
+        "https://login.microsoftonline.com/common/oauth2/nativeclient"
+      ]
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          },
+          {
+            "Id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+            "Type": "Role"
+          },
+          {
+            "Id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+            "Type": "Role"
+          },
+          {
+            "Id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+            "Type": "Role"
+          },
+          {
+            "Id": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
+            "Type": "Role"
+          },
+          {
+            "Id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+            "Type": "Role"
+          },
+          {
+            "Id": "243333ab-4d21-40cb-a475-36241daa0842",
+            "Type": "Role"
+          },
+          {
+            "Id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+            "Type": "Role"
+          },
+          {
+            "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+            "Type": "Role"
+          },
+          {
+            "Id": "f20584af-9290-4153-9280-ff8bb2c0ea7f",
+            "Type": "Role"
+          },
+          {
+            "Id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+            "Type": "Role"
+          },
+          {
+            "Id": "292d869f-3427-49a8-9dab-8c70152b74e9",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": true,
+      "CredentialsWithUsageSign": true,
+      "CredentialsWithUsageVerify": true,
+      "IsEnabled": true,
+      "TokenEncryptionKeyId": true
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "8230c33e-ff30-419c-a1fc-4caf98f069c9",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-06-03T22:04:39Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GraphApp-Test001-20240603180424",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "dfde17fe-a9fd-4925-a035-5a23cf53be9d",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
+        {
+          "AdminConsentDescription": "Allow the application to access SharePoint Online Client Extensibility Web Application Principal Helper on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access SharePoint Online Client Extensibility Web Application Principal Helper",
+          "Id": "fa514a7a-633b-4ff1-a50d-35bf675c86db",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access SharePoint Online Client Extensibility Web Application Principal Helper on your behalf.",
+          "UserConsentDisplayName": "Access SharePoint Online Client Extensibility Web Application Principal Helper",
+          "Value": "user_impersonation"
+        }
+      ],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "7448376c-5b53-469e-ad93-d1fa440f52b9",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2023-04-12T19:28:33Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "SharePoint Online Client Extensibility Web Application Principal Helper",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "e0d9f756-081d-4118-bf5d-1ab978a6fd2c",
+    "IdentifierUris": [
+      "api://b5dae566-ad8f-44e1-9929-5669f1dbb343/microsoft.spfx3rdpartyadmin.com"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": true,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [
+        {
+          "Index": null,
+          "Uri": "https://ictcctic-admin.sharepoint.com/_forms/spfxsinglesignon.aspx"
+        }
+      ],
+      "RedirectUris": [
+        "https://ictcctic-admin.sharepoint.com/_forms/spfxsinglesignon.aspx"
+      ]
+    },
+    "AdditionalProperties": {}
+  }
+]
