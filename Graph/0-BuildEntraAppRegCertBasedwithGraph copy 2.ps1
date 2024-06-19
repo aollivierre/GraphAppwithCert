@@ -227,6 +227,7 @@ $scopes = $jsonContent.Scopes -join " "
 
 # Connect to Microsoft Graph with the specified scopes
 # Connect to Graph interactively
+Disconnect-Graph -Verbose
 Connect-MgGraph -Scopes $scopes
 Get-TenantDetails
 #################################################################################################################################
@@ -281,28 +282,34 @@ try {
 
     # Create the self-signed certificate with tenant and app details
     # Create the folder structure based on tenant name and tenant ID
-    $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($tenantDetails.DisplayName)_$($tenantDetails.Id)"
-    $secretsFolder = Join-Path -Path $tenantFolder -ChildPath "secrets"
+    # $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($tenantDetails.DisplayName)_$($tenantDetails.Id)"
+    $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($tenantDetails.DisplayName)"
+    $secretsFolder = Join-Path -Path "$tenantFolder" -ChildPath "secrets"
 
     # Ensure the folders are created
-    if (-not (Test-Path -Path $secretsFolder)) {
-        New-Item -ItemType Directory -Path $secretsFolder -Force | Out-Null
+    if (-not (Test-Path -Path "$secretsFolder")) {
+        New-Item -ItemType Directory -Path "$secretsFolder" -Force | Out-Null
     }
 
 
-    $Certname = "GraphCert-$($tenantDetails.DisplayName)-$($app.AppId)"
+    # $Certname = "GraphCert-$($tenantDetails.DisplayName)-$($app.AppId)"
+    $Certname = "GraphCert-$($tenantDetails.DisplayName)"
     # Define the parameters as a hashtable
     $params = @{
         CertName    = $Certname
         TenantName  = $tenantDetails.DisplayName
         AppId       = $app.AppId
-        OutputPath  = $secretsFolder
+        OutputPath  = "$secretsFolder"
         PfxPassword = $certPassword
     }
+
+    # $DBG
 
     # Call the function using splatting
     #Create and Export *.PFX and *.key files for the actual graph connection later on OUTSIDE of this script
     $cert = Create-SelfSignedCert @params
+
+    # $DBG
 
     $thumbprint = $cert.Thumbprint
 
@@ -311,10 +318,12 @@ try {
     $certThumbprint = $thumbprint
 
     #Export the CERT to a *.CER file to associatae with the new Entra ID App reg (however when you connect you need to use *.PFX format of that file if not using the cert from the store)
-    $certPath = ExportCertificatetoCER -CertThumbprint $certThumbprint -ExportDirectory $secretsFolder
+    $certPath = ExportCertificatetoCER -CertThumbprint $certThumbprint -ExportDirectory $secretsFolder -Certname $Certname
+
+    # $DBG
 
     # Output the exported certificate path
-    Write-Host "The certificate was exported to: $certPath"
+    Write-EnhancedLog -Message "The certificate was exported to: $certPath" -Level "INFO"
 
     # Validate the certificate creation
     Validate-CertCreation -Thumbprint $thumbprint
