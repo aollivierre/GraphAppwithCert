@@ -1,5 +1,7 @@
 
-test/secrets.json
-Graph/secrets.json
 Graph/secrets2.json
-Graph/graphcert.pfx
+*.cer
+*.key
+*.pfx
+Graph/certsecrets.json
+secrets.json
