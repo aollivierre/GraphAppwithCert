@@ -649,174 +649,6 @@
       "PreAuthorizedApplications": [],
       "RequestedAccessTokenVersion": null
     },
-    "AppId": "67067b58-976d-4640-8770-bd4e05f5359e",
-    "AppManagementPolicies": null,
-    "AppRoles": [],
-    "ApplicationTemplateId": null,
-    "Certification": {
-      "CertificationDetailsUrl": null,
-      "CertificationExpirationDateTime": null,
-      "IsCertifiedByMicrosoft": null,
-      "IsPublisherAttested": null,
-      "LastCertificationDateTime": null
-    },
-    "CreatedDateTime": "2024-06-19T19:24:51Z",
-    "CreatedOnBehalfOf": {
-      "DeletedDateTime": null,
-      "Id": null
-    },
-    "DefaultRedirectUri": null,
-    "DeletedDateTime": null,
-    "Description": null,
-    "DisabledByMicrosoftStatus": null,
-    "DisplayName": "GraphApp-Test001-20240619122448",
-    "ExtensionProperties": null,
-    "FederatedIdentityCredentials": null,
-    "GroupMembershipClaims": null,
-    "HomeRealmDiscoveryPolicies": null,
-    "Id": "bfe62f96-83b4-47f2-a8e2-6f91d281be4b",
-    "IdentifierUris": [],
-    "Info": {
-      "LogoUrl": null,
-      "MarketingUrl": null,
-      "PrivacyStatementUrl": null,
-      "SupportUrl": null,
-      "TermsOfServiceUrl": null
-    },
-    "IsDeviceOnlyAuthSupported": null,
-    "IsFallbackPublicClient": null,
-    "KeyCredentials": [],
-    "Logo": null,
-    "Notes": null,
-    "Oauth2RequirePostResponse": null,
-    "OptionalClaims": {
-      "AccessToken": null,
-      "IdToken": null,
-      "Saml2Token": null
-    },
-    "Owners": null,
-    "ParentalControlSettings": {
-      "CountriesBlockedForMinors": [],
-      "LegalAgeGroupRule": "Allow"
-    },
-    "PasswordCredentials": [],
-    "PublicClient": {
-      "RedirectUris": []
-    },
-    "PublisherDomain": "ictc-ctic.ca",
-    "RequestSignatureVerification": {
-      "AllowedWeakAlgorithms": null,
-      "IsSignedRequestRequired": null
-    },
-    "RequiredResourceAccess": [
-      {
-        "ResourceAccess": [
-          {
-            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
-            "Type": "Scope"
-          },
-          {
-            "Id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
-            "Type": "Role"
-          },
-          {
-            "Id": "b0afded3-3588-46d8-8b3d-9842eff778da",
-            "Type": "Role"
-          },
-          {
-            "Id": "78145de6-330d-4800-a6ce-494ff2d33d07",
-            "Type": "Role"
-          },
-          {
-            "Id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
-            "Type": "Role"
-          },
-          {
-            "Id": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
-            "Type": "Role"
-          },
-          {
-            "Id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
-            "Type": "Role"
-          },
-          {
-            "Id": "243333ab-4d21-40cb-a475-36241daa0842",
-            "Type": "Role"
-          },
-          {
-            "Id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
-            "Type": "Role"
-          },
-          {
-            "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
-            "Type": "Role"
-          },
-          {
-            "Id": "f20584af-9290-4153-9280-ff8bb2c0ea7f",
-            "Type": "Role"
-          },
-          {
-            "Id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
-            "Type": "Role"
-          },
-          {
-            "Id": "292d869f-3427-49a8-9dab-8c70152b74e9",
-            "Type": "Role"
-          }
-        ],
-        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
-      }
-    ],
-    "SamlMetadataUrl": null,
-    "ServiceManagementReference": null,
-    "ServicePrincipalLockConfiguration": {
-      "AllProperties": null,
-      "CredentialsWithUsageSign": null,
-      "CredentialsWithUsageVerify": null,
-      "IsEnabled": null,
-      "TokenEncryptionKeyId": null
-    },
-    "SignInAudience": "AzureADMyOrg",
-    "Spa": {
-      "RedirectUris": []
-    },
-    "Synchronization": {
-      "Id": null,
-      "Jobs": null,
-      "Secrets": null,
-      "Templates": null
-    },
-    "Tags": [],
-    "TokenEncryptionKeyId": null,
-    "TokenIssuancePolicies": null,
-    "TokenLifetimePolicies": null,
-    "UniqueName": null,
-    "VerifiedPublisher": {
-      "AddedDateTime": null,
-      "DisplayName": null,
-      "VerifiedPublisherId": null
-    },
-    "Web": {
-      "HomePageUrl": null,
-      "ImplicitGrantSettings": {
-        "EnableAccessTokenIssuance": false,
-        "EnableIdTokenIssuance": false
-      },
-      "LogoutUrl": null,
-      "RedirectUriSettings": [],
-      "RedirectUris": []
-    },
-    "AdditionalProperties": {}
-  },
-  {
-    "AddIns": [],
-    "Api": {
-      "AcceptMappedClaims": null,
-      "KnownClientApplications": [],
-      "Oauth2PermissionScopes": [],
-      "PreAuthorizedApplications": [],
-      "RequestedAccessTokenVersion": null
-    },
     "AppId": "b3b9dabe-20d1-49d8-97dc-199ab1c2cd5c",
     "AppManagementPolicies": null,
     "AppRoles": [],
@@ -1113,6 +945,174 @@
       "RedirectUris": [
         "https://ictcctic-admin.sharepoint.com/_forms/spfxsinglesignon.aspx"
       ]
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "3a2d9806-d687-4059-b715-b85b513af4e4",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-06-20T20:46:02Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GraphApp-Test001-20240620134559",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "fba7bfd4-05a1-4bbd-b0a9-05de1f2ebdd2",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "ictc-ctic.ca",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          },
+          {
+            "Id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+            "Type": "Role"
+          },
+          {
+            "Id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+            "Type": "Role"
+          },
+          {
+            "Id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+            "Type": "Role"
+          },
+          {
+            "Id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+            "Type": "Role"
+          },
+          {
+            "Id": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
+            "Type": "Role"
+          },
+          {
+            "Id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+            "Type": "Role"
+          },
+          {
+            "Id": "243333ab-4d21-40cb-a475-36241daa0842",
+            "Type": "Role"
+          },
+          {
+            "Id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+            "Type": "Role"
+          },
+          {
+            "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+            "Type": "Role"
+          },
+          {
+            "Id": "f20584af-9290-4153-9280-ff8bb2c0ea7f",
+            "Type": "Role"
+          },
+          {
+            "Id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+            "Type": "Role"
+          },
+          {
+            "Id": "292d869f-3427-49a8-9dab-8c70152b74e9",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
     },
     "AdditionalProperties": {}
   }
