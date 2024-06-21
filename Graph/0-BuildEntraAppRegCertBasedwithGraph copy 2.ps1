@@ -28,7 +28,10 @@ $CertPassword = $certsecrets.certexportpassword
 function Initialize-Environment {
     param (
         [string]$WindowsModulePath = "EnhancedBoilerPlateAO\2.0.0\EnhancedBoilerPlateAO.psm1",
-        [string]$LinuxModulePath = "/usr/src/code/Modules/EnhancedBoilerPlateAO/2.0.0/EnhancedBoilerPlateAO.psm1"
+        # [string]$LinuxModulePath = "/usr/src/code/Modules/EnhancedBoilerPlateAO/2.0.0/EnhancedBoilerPlateAO.psm1"
+
+        #When inside of VS Code Dev Containers
+        [string]$LinuxModulePath = "/workspaces/Modules/EnhancedBoilerPlateAO/2.0.0/EnhancedBoilerPlateAO.psm1"
     )
 
     function Get-Platform {
@@ -143,7 +146,11 @@ Write-Host "Starting to call Get-ModulesFolderPath..."
 # Store the outcome in $ModulesFolderPath
 try {
   
-    $ModulesFolderPath = Get-ModulesFolderPath -WindowsPath "C:\code\modules" -UnixPath "/usr/src/code/modules"
+    # $ModulesFolderPath = Get-ModulesFolderPath -WindowsPath "C:\code\modules" -UnixPath "/usr/src/code/modules"
+
+    #When inside of VS Code Dev Containers (UNIX PATH IS CASE SENSITIVE i.e Modules not modules)
+    $ModulesFolderPath = Get-ModulesFolderPath -WindowsPath "C:\code\modules" -UnixPath "/workspaces/Modules"
+    
     # $ModulesFolderPath = Get-ModulesFolderPath -WindowsPath "$PsScriptRoot\modules" -UnixPath "$PsScriptRoot/modules"
     Write-host "Modules folder path: $ModulesFolderPath"
 
@@ -155,6 +162,8 @@ catch {
 
 Write-Host "Starting to call Import-LatestModulesLocalRepository..."
 Import-LatestModulesLocalRepository -ModulesFolderPath $ModulesFolderPath -ScriptPath $PSScriptRoot
+
+# $DBG
 
 ###############################################################################################################################
 ############################################### END MODULE LOADING ############################################################
@@ -181,8 +190,8 @@ Write-EnhancedLog -Message "Script Started" -Level "INFO" -ForegroundColor ([Con
 ################################################################################################################################
 ################################################################################################################################
 
-# Execute InstallAndImportModulesPSGallery function
-InstallAndImportModulesPSGallery -moduleJsonPath "$PSScriptRoot/modules.json"
+# Execute InstallAndImportModulesPSGallery function (#When inside of VS Code Dev Containers (UNIX PATH IS CASE SENSITIVE i.e Modules not modules)
+InstallAndImportModulesPSGallery -moduleJsonPath "$PSScriptRoot/Modules.json"
 
 ################################################################################################################################
 ################################################ END MODULE CHECKING ###########################################################
@@ -227,9 +236,17 @@ $scopes = $jsonContent.Scopes -join " "
 
 # Connect to Microsoft Graph with the specified scopes
 # Connect to Graph interactively
-Disconnect-Graph -Verbose
+# Disconnect-Graph -Verbose
+
+#Uncomment when not debugging
 Connect-MgGraph -Scopes $scopes
 Get-TenantDetails
+
+
+# Write-Host 'DBG - got tenant details'
+
+
+# $DBG
 #################################################################################################################################
 ################################################# END Connecting to Graph #######################################################
 #################################################################################################################################
@@ -258,26 +275,35 @@ try {
     }
     Log-Params -Params $params
 
+
+
+
+
+    ##########################################################VALIDATION for APP############################################################
     # Validate that the app does not already exist
-    Write-EnhancedLog -Message 'first validation'
-    Run-DumpAppListToJSON -JsonPath $jsonPath
-    $appExists = Validate-AppCreation -AppName $appName -JsonPath $jsonPath
+    # Write-EnhancedLog -Message 'first validation'
+    # Run-DumpAppListToJSON -JsonPath $jsonPath
+    # $appExists = Validate-AppCreation -AppName $appName -JsonPath $jsonPath
     # $DBG
-    if ($appExists) {
-        Write-EnhancedLog -Message "App already exists" -Level "ERROR" -ForegroundColor ([ConsoleColor]::Red)
-        throw "App already exists"
-    }
-    else {
-        Write-EnhancedLog -Message "App does not exist" -Level "INFO"
-    }
+    # if ($appExists) {
+    #     Write-EnhancedLog -Message "App already exists" -Level "ERROR" -ForegroundColor ([ConsoleColor]::Red)
+    #     throw "App already exists"
+    # }
+    # else {
+    #     Write-EnhancedLog -Message "App does not exist" -Level "INFO"
+    # }
+    ##########################################################VALIDATION for APP############################################################
 
     # Create the app registration
     $appDetails = Create-AppRegistration -AppName $appName -PermsFile "$PSScriptRoot\permissions.json"
     $app = $appDetails.App
     $tenantDetails = $appDetails.TenantDetails
 
-    Write-EnhancedLog -Message 'calling Validate-AppCreationWithRetry for the second validation'
-    Validate-AppCreationWithRetry -AppName $AppName -JsonPath $JsonPath
+
+    ##########################################################VALIDATION for APP############################################################
+    # Write-EnhancedLog -Message 'calling Validate-AppCreationWithRetry for the second validation'
+    # Validate-AppCreationWithRetry -AppName $AppName -JsonPath $JsonPath
+    ##########################################################VALIDATION for APP############################################################
     
 
     # Create the self-signed certificate with tenant and app details
@@ -299,7 +325,9 @@ try {
         CertName    = $Certname
         TenantName  = $tenantDetails.DisplayName
         AppId       = $app.AppId
-        OutputPath  = "$secretsFolder"
+        # OutputPath  = "$secretsFolder"
+        # OutputPath  = "/workspaces/cert"
+        OutputPath  = "$PSScriptRoot/cert"
         PfxPassword = $certPassword
     }
 
@@ -307,9 +335,34 @@ try {
 
     # Call the function using splatting
     #Create and Export *.PFX and *.key files for the actual graph connection later on OUTSIDE of this script
-    $cert = Create-SelfSignedCert @params
+    # $cert = Create-SelfSignedCert @params
+
+
+
+    Write-Host "first break point - before calling Create-SelfSignedCertOpenSSL"
+    # $DBG
+
+
+    # Test the function
+    # Create-DummyCertWithOpenSSL -OutputDir "$secretsFolder"
+    # Create-DummyCertWithOpenSSL -OutputDir "/workspaces/cert"
+
+
+    # Write-Host 'path is' "$PSScriptRoot/cert"
 
     # $DBG
+
+    Create-DummyCertWithOpenSSL -OutputDir "$PSScriptRoot/cert"
+
+    $DBG
+
+    #!ToDo no we fixed the Create-DummyCertWithOpenSSL and it's palcing two files in /workspaces/graphappwithcert/Graph/cert we need to continue building out the certs and exporting to PFX file
+
+    $cert = Create-SelfSignedCertOpenSSL @params
+
+
+    Write-Host "second break point - after calling Create-SelfSignedCertOpenSSL"
+    $DBG
 
     $thumbprint = $cert.Thumbprint
 
@@ -344,7 +397,24 @@ try {
     Grant-AdminConsentToApiPermissions -clientId $clientId -SPPermissionsPath $PSScriptRoot
 
     # Open the certificate store
-    Start-Process certmgr.msc
+
+
+    
+    if ($PSVersionTable.OS -match "Windows") {
+        try {
+            Start-Process certmgr.msc
+            Write-EnhancedLog -Message "opened the Local USER cert store" -Level "INFO"
+        }
+        catch {
+            Write-EnhancedLog -Message "An error occurred while opening the Local USER certificate store." -Level "ERROR"
+            Handle-Error -ErrorRecord $_
+            throw $_
+        }
+    }
+    else {
+        Write-EnhancedLog -Message "Running on a non-Windows OS, skipping opening the cert store" -Level "INFO"
+    }
+
 
     # Output the secrets
     # Define the parameters as a hashtable
