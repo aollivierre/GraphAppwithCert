@@ -227,9 +227,25 @@ $scopes = $jsonContent.Scopes -join " "
 # Connect to Microsoft Graph with the specified scopes
 # Connect to Graph interactively
 Disconnect-MgGraph -Verbose
-Connect-MgGraph -Scopes $scopes -Verbose
+
+# Call the function to connect to Microsoft Graph
+Connect-ToMicrosoftGraphIfServerCore -Scopes $scopes
+
+
+
+
 # $dbg
-Get-TenantDetails
+
+
+# Get the tenant details
+$tenantDetails = $null
+$tenantDetails = Get-TenantDetails
+if ($null -eq $tenantDetails) {
+    Write-EnhancedLog -Message "Unable to proceed without tenant details" -Level "ERROR"
+    throw "Tenant Details name is empty. Cannot proceed without a valid tenant details"
+    exit
+}
+
 #################################################################################################################################
 ################################################# END Connecting to Graph #######################################################
 #################################################################################################################################
@@ -274,7 +290,8 @@ try {
     # Create the app registration
     $appDetails = Create-AppRegistration -AppName $appName -PermsFile "$PSScriptRoot\permissions.json"
     $app = $appDetails.App
-    $tenantDetails = $appDetails.TenantDetails
+    $apptenantDetails = $null
+    $apptenantDetails = $appDetails.TenantDetails
 
     Write-EnhancedLog -Message 'calling Validate-AppCreationWithRetry for the second validation'
     Validate-AppCreationWithRetry -AppName $AppName -JsonPath $JsonPath
@@ -283,21 +300,28 @@ try {
     # Create the self-signed certificate with tenant and app details
     # Create the folder structure based on tenant name and tenant ID
     # $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($tenantDetails.DisplayName)_$($tenantDetails.Id)"
-    $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($tenantDetails.DisplayName)"
+    $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($apptenantDetails.DisplayName)"
     $secretsFolder = Join-Path -Path "$tenantFolder" -ChildPath "secrets"
 
-    # Ensure the folders are created
-    if (-not (Test-Path -Path "$secretsFolder")) {
-        New-Item -ItemType Directory -Path "$secretsFolder" -Force | Out-Null
+    # Check if the folder exists
+    if (Test-Path -Path "$secretsFolder") {
+        # Remove the existing folder and its contents
+        Remove-Item -Path "$secretsFolder" -Recurse -Force
+        Write-Host "Removed existing secrets folder: $secretsFolder"
     }
+    
+    # Create a new folder
+    New-Item -ItemType Directory -Path "$secretsFolder" -Force | Out-Null
+    Write-Host "Created new secrets folder: $secretsFolder"
+    
 
 
     # $Certname = "GraphCert-$($tenantDetails.DisplayName)-$($app.AppId)"
-    $Certname = "GraphCert-$($tenantDetails.DisplayName)"
+    $Certname = "GraphCert-$($apptenantDetails.DisplayName)"
     # Define the parameters as a hashtable
     $params = @{
         CertName    = $Certname
-        TenantName  = $tenantDetails.DisplayName
+        TenantName  = $apptenantDetails.DisplayName
         AppId       = $app.AppId
         OutputPath  = "$secretsFolder"
         PfxPassword = $certPassword
@@ -343,22 +367,28 @@ try {
 
     Grant-AdminConsentToApiPermissions -clientId $clientId -SPPermissionsPath $PSScriptRoot
 
-    # Open the certificate store
-    Start-Process certmgr.msc
+    # # Open the certificate store
+
+    # Call the function
+    Open-CertificateStore
+
 
     # Output the secrets
     # Define the parameters as a hashtable
     $SecretsFile = Join-Path -Path $secretsFolder -ChildPath "secrets.json"
+
+    $params = $null
     $params = @{
-        AppDisplayName = $app.DisplayName
-        ApplicationID  = $app.AppId
-        TenantID       = $tenantDetails.Id
-        SecretsFile    = $secretsfile
-        CertName       = $Certname
-        Thumbprint     = $thumbprint
-        CertPassword   = $CertPassword
-        TenantName     = $tenantDetails.DisplayName
-        OutputPath     = $secretsFolder
+        AppDisplayName   = $app.DisplayName
+        ApplicationID    = $app.AppId
+        TenantID         = $tenantDetails.TenantId
+        SecretsFile      = $secretsfile
+        CertName         = $Certname
+        Thumbprint       = $thumbprint
+        CertPassword     = $CertPassword
+        TenantName       = $tenantDetails.TenantName
+        TenantDomainName = $tenantDetails.tenantDomain
+        OutputPath       = $secretsFolder
     }
 
     # Call the function using splatting

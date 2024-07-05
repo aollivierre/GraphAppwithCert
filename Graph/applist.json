@@ -7,7 +7,7 @@
     "PreAuthorizedApplications": [],
     "RequestedAccessTokenVersion": null
   },
-  "AppId": "769d1df6-e423-4472-abd0-80f6905290d1",
+  "AppId": "d0d82004-9a7e-4da6-9c78-719c02e23512",
   "AppManagementPolicies": null,
   "AppRoles": [],
   "ApplicationTemplateId": null,
@@ -18,7 +18,7 @@
     "IsPublisherAttested": null,
     "LastCertificationDateTime": null
   },
-  "CreatedDateTime": "2024-07-05T01:17:19Z",
+  "CreatedDateTime": "2024-07-05T23:20:38Z",
   "CreatedOnBehalfOf": {
     "DeletedDateTime": null,
     "Id": null
@@ -27,12 +27,12 @@
   "DeletedDateTime": null,
   "Description": null,
   "DisabledByMicrosoftStatus": null,
-  "DisplayName": "GraphApp-Test001-20240704181717",
+  "DisplayName": "GraphApp-Test001-20240705192033",
   "ExtensionProperties": null,
   "FederatedIdentityCredentials": null,
   "GroupMembershipClaims": null,
   "HomeRealmDiscoveryPolicies": null,
-  "Id": "99bd141e-23fd-48b0-a254-7fc55c2893d7",
+  "Id": "35a1305d-c9f9-4ecf-8bcd-5af46ded6df2",
   "IdentifierUris": [],
   "Info": {
     "LogoUrl": null,
