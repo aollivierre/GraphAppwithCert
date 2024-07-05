@@ -1,7 +1,6 @@
 #!ToDO work on creatng a function for importing all modules in the modules folders without specifying the path of each module.
 #fix permissions of the client app to add Intune permissions
 
-
 # Load the secrets from the JSON file
 #First, load secrets and create a credential object:
 # Assuming secrets.json is in the same directory as your script
@@ -227,8 +226,9 @@ $scopes = $jsonContent.Scopes -join " "
 
 # Connect to Microsoft Graph with the specified scopes
 # Connect to Graph interactively
-Disconnect-Graph -Verbose
-Connect-MgGraph -Scopes $scopes
+Disconnect-MgGraph -Verbose
+Connect-MgGraph -Scopes $scopes -Verbose
+# $dbg
 Get-TenantDetails
 #################################################################################################################################
 ################################################# END Connecting to Graph #######################################################
