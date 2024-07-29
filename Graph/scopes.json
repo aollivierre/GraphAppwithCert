@@ -28,6 +28,7 @@
       "Organization.Read.All",
       "Organization.ReadWrite.All",
       "Policy.Read.All",
+      "Policy.ReadWrite.ConditionalAccess",
       "DeviceManagementApps.ReadWrite.All",
       "AppRoleAssignment.ReadWrite.All"
     ]

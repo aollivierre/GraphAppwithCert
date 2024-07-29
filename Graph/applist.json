@@ -1,168 +1,1398 @@
-{
-  "AddIns": [],
-  "Api": {
-    "AcceptMappedClaims": null,
-    "KnownClientApplications": [],
-    "Oauth2PermissionScopes": [],
-    "PreAuthorizedApplications": [],
-    "RequestedAccessTokenVersion": null
-  },
-  "AppId": "d0d82004-9a7e-4da6-9c78-719c02e23512",
-  "AppManagementPolicies": null,
-  "AppRoles": [],
-  "ApplicationTemplateId": null,
-  "Certification": {
-    "CertificationDetailsUrl": null,
-    "CertificationExpirationDateTime": null,
-    "IsCertifiedByMicrosoft": null,
-    "IsPublisherAttested": null,
-    "LastCertificationDateTime": null
-  },
-  "CreatedDateTime": "2024-07-05T23:20:38Z",
-  "CreatedOnBehalfOf": {
+[
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "65c4e332-5db9-49b2-a6e0-6430cf2a0a19",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-07-18T15:05:52Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
     "DeletedDateTime": null,
-    "Id": null
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GraphApp-Test001-20240718110549",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "06f727bc-6f27-49db-b739-6ead0e72462e",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          },
+          {
+            "Id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
+            "Type": "Role"
+          },
+          {
+            "Id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+            "Type": "Role"
+          },
+          {
+            "Id": "78145de6-330d-4800-a6ce-494ff2d33d07",
+            "Type": "Role"
+          },
+          {
+            "Id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
+            "Type": "Role"
+          },
+          {
+            "Id": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
+            "Type": "Role"
+          },
+          {
+            "Id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
+            "Type": "Role"
+          },
+          {
+            "Id": "243333ab-4d21-40cb-a475-36241daa0842",
+            "Type": "Role"
+          },
+          {
+            "Id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+            "Type": "Role"
+          },
+          {
+            "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+            "Type": "Role"
+          },
+          {
+            "Id": "f20584af-9290-4153-9280-ff8bb2c0ea7f",
+            "Type": "Role"
+          },
+          {
+            "Id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+            "Type": "Role"
+          },
+          {
+            "Id": "292d869f-3427-49a8-9dab-8c70152b74e9",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
   },
-  "DefaultRedirectUri": null,
-  "DeletedDateTime": null,
-  "Description": null,
-  "DisabledByMicrosoftStatus": null,
-  "DisplayName": "GraphApp-Test001-20240705192033",
-  "ExtensionProperties": null,
-  "FederatedIdentityCredentials": null,
-  "GroupMembershipClaims": null,
-  "HomeRealmDiscoveryPolicies": null,
-  "Id": "35a1305d-c9f9-4ecf-8bcd-5af46ded6df2",
-  "IdentifierUris": [],
-  "Info": {
-    "LogoUrl": null,
-    "MarketingUrl": null,
-    "PrivacyStatementUrl": null,
-    "SupportUrl": null,
-    "TermsOfServiceUrl": null
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "6b4db87e-f9b6-408d-89a0-818e8f3b890e",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-04-13T21:53:57Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "PowerShellGraphwithDotnetHttpClient",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "5624702b-c88f-4e99-a634-8884aba678e1",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [
+      {
+        "CustomKeyIdentifier": null,
+        "DisplayName": "Password uploaded on Sat Apr 13 2024",
+        "EndDateTime": "2024-07-12T21:54:58.522Z",
+        "Hint": "C_o",
+        "KeyId": "3d174396-f956-4719-9346-ab11abeaf911",
+        "SecretText": null,
+        "StartDateTime": "2024-04-13T21:54:58.522Z"
+      }
+    ],
+    "PublicClient": {
+      "RedirectUris": [
+        "ms-appx-web://microsoft.aad.brokerplugin/6b4db87e-f9b6-408d-89a0-818e8f3b890e",
+        "https://login.microsoftonline.com/common/oauth2/nativeclient"
+      ]
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          },
+          {
+            "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+            "Type": "Role"
+          },
+          {
+            "Id": "62a82d76-70ea-41e2-9197-370581804d09",
+            "Type": "Role"
+          },
+          {
+            "Id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+            "Type": "Role"
+          },
+          {
+            "Id": "01c0a623-fc9b-48e9-b794-0756f8e8f067",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": true,
+      "CredentialsWithUsageSign": true,
+      "CredentialsWithUsageVerify": true,
+      "IsEnabled": true,
+      "TokenEncryptionKeyId": true
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
   },
-  "IsDeviceOnlyAuthSupported": null,
-  "IsFallbackPublicClient": null,
-  "KeyCredentials": [],
-  "Logo": null,
-  "Notes": null,
-  "Oauth2RequirePostResponse": null,
-  "OptionalClaims": {
-    "AccessToken": null,
-    "IdToken": null,
-    "Saml2Token": null
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "8708d762-dde9-4e9f-a7b6-f9026af29c68",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-07-16T21:36:56Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GSA-Privateaccesstrafficforwardingprofile",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "622b9705-07fc-430b-8f50-6c44ee7147e9",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
   },
-  "Owners": null,
-  "ParentalControlSettings": {
-    "CountriesBlockedForMinors": [],
-    "LegalAgeGroupRule": "Allow"
-  },
-  "PasswordCredentials": [],
-  "PublicClient": {
-    "RedirectUris": []
-  },
-  "PublisherDomain": "ambico.com",
-  "RequestSignatureVerification": {
-    "AllowedWeakAlgorithms": null,
-    "IsSignedRequestRequired": null
-  },
-  "RequiredResourceAccess": [
-    {
-      "ResourceAccess": [
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
         {
-          "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
-          "Type": "Scope"
-        },
-        {
-          "Id": "1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9",
-          "Type": "Role"
-        },
-        {
-          "Id": "b0afded3-3588-46d8-8b3d-9842eff778da",
-          "Type": "Role"
-        },
-        {
-          "Id": "78145de6-330d-4800-a6ce-494ff2d33d07",
-          "Type": "Role"
-        },
-        {
-          "Id": "9241abd9-d0e6-425a-bd4f-47ba86e767a4",
-          "Type": "Role"
-        },
-        {
-          "Id": "5b07b0dd-2377-4e44-a38d-703f09a0dc3c",
-          "Type": "Role"
-        },
-        {
-          "Id": "2f51be20-0bb4-4fed-bf7b-db946066c75e",
-          "Type": "Role"
-        },
-        {
-          "Id": "243333ab-4d21-40cb-a475-36241daa0842",
-          "Type": "Role"
-        },
-        {
-          "Id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
-          "Type": "Role"
-        },
-        {
-          "Id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
-          "Type": "Role"
-        },
-        {
-          "Id": "f20584af-9290-4153-9280-ff8bb2c0ea7f",
-          "Type": "Role"
-        },
-        {
-          "Id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
-          "Type": "Role"
-        },
-        {
-          "Id": "292d869f-3427-49a8-9dab-8c70152b74e9",
-          "Type": "Role"
+          "AdminConsentDescription": "Allow the application to access FortiGate SSL VPN on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access FortiGate SSL VPN",
+          "Id": "ab57ca83-3c08-4ba1-ad72-84a20e3e0320",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access FortiGate SSL VPN on your behalf.",
+          "UserConsentDisplayName": "Access FortiGate SSL VPN",
+          "Value": "user_impersonation"
         }
       ],
-      "ResourceAppId": "00000003-0000-0000-c000-000000000000"
-    }
-  ],
-  "SamlMetadataUrl": null,
-  "ServiceManagementReference": null,
-  "ServicePrincipalLockConfiguration": {
-    "AllProperties": null,
-    "CredentialsWithUsageSign": null,
-    "CredentialsWithUsageVerify": null,
-    "IsEnabled": null,
-    "TokenEncryptionKeyId": null
-  },
-  "SignInAudience": "AzureADMyOrg",
-  "Spa": {
-    "RedirectUris": []
-  },
-  "Synchronization": {
-    "Id": null,
-    "Jobs": null,
-    "Secrets": null,
-    "Templates": null
-  },
-  "Tags": [],
-  "TokenEncryptionKeyId": null,
-  "TokenIssuancePolicies": null,
-  "TokenLifetimePolicies": null,
-  "UniqueName": null,
-  "VerifiedPublisher": {
-    "AddedDateTime": null,
-    "DisplayName": null,
-    "VerifiedPublisherId": null
-  },
-  "Web": {
-    "HomePageUrl": null,
-    "ImplicitGrantSettings": {
-      "EnableAccessTokenIssuance": false,
-      "EnableIdTokenIssuance": false
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
     },
-    "LogoutUrl": null,
-    "RedirectUriSettings": [],
-    "RedirectUris": []
+    "AppId": "f8dc7d6c-4e38-4522-b61a-ca7cbfb9ca3a",
+    "AppManagementPolicies": null,
+    "AppRoles": [
+      {
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Description": "msiam_access",
+        "DisplayName": "msiam_access",
+        "Id": "e3de6aa2-74ca-4738-8d22-3c28f45599d6",
+        "IsEnabled": true,
+        "Origin": "Application",
+        "Value": null
+      }
+    ],
+    "ApplicationTemplateId": "06d22ec7-1df8-439f-a854-89d7a68edfb3",
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2023-04-25T19:59:04Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": "https://gw3062.fortimail.com/sso",
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "FortiGate SSL VPN",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": "SecurityGroup",
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "6e368bcf-d93b-4473-8554-6c0f376a57a4",
+    "IdentifierUris": [
+      "https://gw3062.fortimail.com/sp"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": false,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": "https://*.FORTIGATE-FQDN.com/remote/saml/login?metadata=fortigatesslvpn|ISV9.2|primary|z",
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [
+        {
+          "Index": null,
+          "Uri": "https://gw3062.fortimail.com/sso"
+        }
+      ],
+      "RedirectUris": [
+        "https://gw3062.fortimail.com/sso"
+      ]
+    },
+    "AdditionalProperties": {}
   },
-  "AdditionalProperties": {}
-}
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "658412cd-6839-4d7c-ba92-f56aa7940677",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2023-04-15T05:17:47Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "SyncSharePointLibrary",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "908df296-5a95-4ce0-928e-97152f4c7604",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [
+      {
+        "CustomKeyIdentifier": null,
+        "DisplayName": "SyncSharePointLibrary ",
+        "EndDateTime": "2023-07-14T05:18:25.367Z",
+        "Hint": "0sm",
+        "KeyId": "97259334-c491-4fb8-ae6f-89555f500b14",
+        "SecretText": null,
+        "StartDateTime": "2023-04-15T05:18:25.367Z"
+      }
+    ],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+            "Type": "Scope"
+          },
+          {
+            "Id": "75359482-378d-4052-8f01-80520e7db3cd",
+            "Type": "Role"
+          },
+          {
+            "Id": "a82116e5-55eb-4c41-a434-62fe8a61c773",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
+        {
+          "AdminConsentDescription": "Allow the application to access P2P Server on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access P2P Server",
+          "Id": "9950a75d-4993-4329-920c-abef2d1f62b5",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access P2P Server on your behalf.",
+          "UserConsentDisplayName": "Access P2P Server",
+          "Value": "user_impersonation"
+        }
+      ],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "9d3c7653-67e5-46f9-bc1f-03774f73b9c9",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2023-04-09T21:27:05Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "P2P Server",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "91c77243-8e11-4b05-81d5-d306a8cf8004",
+    "IdentifierUris": [
+      "urn:p2p_cert"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": false,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "a0d453ba-f98b-43bb-9400-56916ca2662b",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-07-16T21:36:56Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GSA-Internettrafficforwardingprofile",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "a8956c75-c66d-4d61-a325-92fa8a06402a",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [
+        {
+          "AdminConsentDescription": "Allow the application to access LAB-HV01 - RDP on behalf of the signed-in user.",
+          "AdminConsentDisplayName": "Access LAB-HV01 - RDP",
+          "Id": "aadf91e7-3595-4ace-a380-5bfdba15b14b",
+          "IsEnabled": true,
+          "Origin": null,
+          "Type": "User",
+          "UserConsentDescription": "Allow the application to access LAB-HV01 - RDP on your behalf.",
+          "UserConsentDisplayName": "Access LAB-HV01 - RDP",
+          "Value": "user_impersonation"
+        }
+      ],
+      "PreAuthorizedApplications": [
+        {
+          "AppId": "760282b4-0cfc-4952-b467-c8e0298fee16",
+          "DelegatedPermissionIds": [
+            "aadf91e7-3595-4ace-a380-5bfdba15b14b"
+          ]
+        }
+      ],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "7a16e552-82b0-4419-889c-68ebbdd18448",
+    "AppManagementPolicies": null,
+    "AppRoles": [
+      {
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Description": "User",
+        "DisplayName": "User",
+        "Id": "18d14569-c3bd-439b-9a66-3a2aee01d14f",
+        "IsEnabled": true,
+        "Origin": "Application",
+        "Value": null
+      },
+      {
+        "AllowedMemberTypes": [
+          "User"
+        ],
+        "Description": "msiam_access",
+        "DisplayName": "msiam_access",
+        "Id": "b9632174-c057-4f7e-951b-be3adc52bfe6",
+        "IsEnabled": true,
+        "Origin": "Application",
+        "Value": null
+      }
+    ],
+    "ApplicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2023-09-10T18:57:09Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "LAB-HV01 - RDP",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "ad902a04-3a77-43d5-a869-da6cf27eb9c3",
+    "IdentifierUris": [
+      "api://7a16e552-82b0-4419-889c-68ebbdd18448"
+    ],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": false,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [
+      "IsAccessibleViaZTNAClient",
+      "HideApp",
+      "PrivateAccessNonWebApplication"
+    ],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": true
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "bf8b723f-561b-4902-9b96-809da1fe5482",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2024-07-16T21:36:56Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "GSA-Microsoft365trafficforwardingprofile",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "c3bd9fce-7903-44c5-ba7b-c250de63c002",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": null,
+    "KeyCredentials": [],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": []
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  },
+  {
+    "AddIns": [],
+    "Api": {
+      "AcceptMappedClaims": null,
+      "KnownClientApplications": [],
+      "Oauth2PermissionScopes": [],
+      "PreAuthorizedApplications": [],
+      "RequestedAccessTokenVersion": null
+    },
+    "AppId": "ae9c25d5-1a7c-44e9-859e-97dbb8007cd2",
+    "AppManagementPolicies": null,
+    "AppRoles": [],
+    "ApplicationTemplateId": null,
+    "Certification": {
+      "CertificationDetailsUrl": null,
+      "CertificationExpirationDateTime": null,
+      "IsCertifiedByMicrosoft": null,
+      "IsPublisherAttested": null,
+      "LastCertificationDateTime": null
+    },
+    "CreatedDateTime": "2023-04-15T14:11:10Z",
+    "CreatedOnBehalfOf": {
+      "DeletedDateTime": null,
+      "Id": null
+    },
+    "DefaultRedirectUri": null,
+    "DeletedDateTime": null,
+    "Description": null,
+    "DisabledByMicrosoftStatus": null,
+    "DisplayName": "PnPApp",
+    "ExtensionProperties": null,
+    "FederatedIdentityCredentials": null,
+    "GroupMembershipClaims": null,
+    "HomeRealmDiscoveryPolicies": null,
+    "Id": "ea920aaa-3c23-414d-97d0-0285466b6ef4",
+    "IdentifierUris": [],
+    "Info": {
+      "LogoUrl": null,
+      "MarketingUrl": null,
+      "PrivacyStatementUrl": null,
+      "SupportUrl": null,
+      "TermsOfServiceUrl": null
+    },
+    "IsDeviceOnlyAuthSupported": null,
+    "IsFallbackPublicClient": true,
+    "KeyCredentials": [
+      {
+        "CustomKeyIdentifier": [
+          4,
+          13,
+          133,
+          235,
+          144,
+          64,
+          215,
+          205,
+          69,
+          232,
+          81,
+          0,
+          19,
+          97,
+          55,
+          8,
+          0,
+          181,
+          3,
+          80,
+          121,
+          247,
+          159,
+          122,
+          208,
+          45,
+          69,
+          247,
+          64,
+          121
+        ],
+        "DisplayName": "CN=PnPApp",
+        "EndDateTime": "2033-04-15T05:00:00Z",
+        "Key": null,
+        "KeyId": "04574888-c062-45ca-be49-bb86781b65e8",
+        "StartDateTime": "2023-04-15T05:00:00Z",
+        "Type": "AsymmetricX509Cert",
+        "Usage": "Verify"
+      }
+    ],
+    "Logo": null,
+    "Notes": null,
+    "Oauth2RequirePostResponse": null,
+    "OptionalClaims": {
+      "AccessToken": null,
+      "IdToken": null,
+      "Saml2Token": null
+    },
+    "Owners": null,
+    "ParentalControlSettings": {
+      "CountriesBlockedForMinors": [],
+      "LegalAgeGroupRule": "Allow"
+    },
+    "PasswordCredentials": [],
+    "PublicClient": {
+      "RedirectUris": [
+        "https://pnp.github.io/powershell/consent.html",
+        "https://login.microsoftonline.com/common/oauth2/nativeclient"
+      ]
+    },
+    "PublisherDomain": "77ryf5.onmicrosoft.com",
+    "RequestSignatureVerification": {
+      "AllowedWeakAlgorithms": null,
+      "IsSignedRequestRequired": null
+    },
+    "RequiredResourceAccess": [
+      {
+        "ResourceAccess": [
+          {
+            "Id": "62a82d76-70ea-41e2-9197-370581804d09",
+            "Type": "Role"
+          },
+          {
+            "Id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0000-c000-000000000000"
+      },
+      {
+        "ResourceAccess": [
+          {
+            "Id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+            "Type": "Role"
+          },
+          {
+            "Id": "56680e0d-d2a3-4ae1-80d8-3c4f2100e3d0",
+            "Type": "Scope"
+          },
+          {
+            "Id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+            "Type": "Role"
+          }
+        ],
+        "ResourceAppId": "00000003-0000-0ff1-ce00-000000000000"
+      }
+    ],
+    "SamlMetadataUrl": null,
+    "ServiceManagementReference": null,
+    "ServicePrincipalLockConfiguration": {
+      "AllProperties": null,
+      "CredentialsWithUsageSign": null,
+      "CredentialsWithUsageVerify": null,
+      "IsEnabled": null,
+      "TokenEncryptionKeyId": null
+    },
+    "SignInAudience": "AzureADMyOrg",
+    "Spa": {
+      "RedirectUris": []
+    },
+    "Synchronization": {
+      "Id": null,
+      "Jobs": null,
+      "Secrets": null,
+      "Templates": null
+    },
+    "Tags": [],
+    "TokenEncryptionKeyId": null,
+    "TokenIssuancePolicies": null,
+    "TokenLifetimePolicies": null,
+    "UniqueName": null,
+    "VerifiedPublisher": {
+      "AddedDateTime": null,
+      "DisplayName": null,
+      "VerifiedPublisherId": null
+    },
+    "Web": {
+      "HomePageUrl": null,
+      "ImplicitGrantSettings": {
+        "EnableAccessTokenIssuance": false,
+        "EnableIdTokenIssuance": false
+      },
+      "LogoutUrl": null,
+      "RedirectUriSettings": [],
+      "RedirectUris": []
+    },
+    "AdditionalProperties": {}
+  }
+]

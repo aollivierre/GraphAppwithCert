@@ -73,6 +73,18 @@
             "granted": true
         },
         {
+            "name": "Policy.Read.All",
+            "type": "Application",
+            "description": "Read all identity conditional access policies",
+            "granted": true
+        },
+        {
+            "name": "Policy.ReadWrite.ConditionalAccess",
+            "type": "Application",
+            "description": "Read and write identity conditional access policies",
+            "granted": true
+        },
+        {
             "name": "User.Read",
             "type": "Delegated",
             "description": "Sign in and read user profile",
