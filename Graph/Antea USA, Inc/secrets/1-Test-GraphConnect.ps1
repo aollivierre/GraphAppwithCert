@@ -84,11 +84,11 @@ Connect-PnPOnline @connectParams
 
 
 
-    # Get all site collections, excluding specific templates
-    $SiteCollections = Get-PnPTenantSite | Where-Object -Property Template -NotIn ("SRCHCEN#0", "REDIRECTSITE#0", "SPSMSITEHOST#0", "APPCATALOG#0", "POINTPUBLISHINGHUB#0", "EDISC#0", "STS#-1")
+# Get all site collections, excluding specific templates
+$SiteCollections = Get-PnPTenantSite | Where-Object -Property Template -NotIn ("SRCHCEN#0", "REDIRECTSITE#0", "SPSMSITEHOST#0", "APPCATALOG#0", "POINTPUBLISHINGHUB#0", "EDISC#0", "STS#-1")
 
-    # Export site collection data to CSV
-    $SiteCollections | Select-Object Title, URL, Owner, LastContentModifiedDate, WebsCount, Template, StorageUsage | Out-GridView
+# Export site collection data to CSV
+$SiteCollections | Select-Object Title, URL, Owner, LastContentModifiedDate, WebsCount, Template, StorageUsage | Out-GridView
 
 
 
