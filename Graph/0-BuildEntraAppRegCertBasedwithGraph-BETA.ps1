@@ -1,4 +1,25 @@
-iex ((irm "https://raw.githubusercontent.com/aollivierre/module-starter/main/Module-Starter.ps1") -replace '\$Mode = "dev"', '$Mode = "dev"')
+# Fetch the script content
+$scriptContent = Invoke-RestMethod "https://raw.githubusercontent.com/aollivierre/module-starter/main/Module-Starter.ps1"
+
+# Define replacements in a hashtable
+$replacements = @{
+    '\$Mode = "dev"'                     = '$Mode = "dev"'
+    '\$SkipPSGalleryModules = \$false'   = '$SkipPSGalleryModules = $true'
+    '\$SkipCheckandElevate = \$false'    = '$SkipCheckandElevate = $true'
+    '\$SkipAdminCheck = \$false'         = '$SkipAdminCheck = $true'
+    '\$SkipPowerShell7Install = \$false' = '$SkipPowerShell7Install = $true'
+    '\$SkipModuleDownload = \$false'     = '$SkipModuleDownload = $true'
+    '\$SkipGitrepos = \$false'           = '$SkipGitrepos = $true'
+}
+
+# Apply the replacements
+foreach ($pattern in $replacements.Keys) {
+    $scriptContent = $scriptContent -replace $pattern, $replacements[$pattern]
+}
+
+# Execute the script
+Invoke-Expression $scriptContent
+
 
 #!ToDO work on creatng a function for importing all modules in the modules folders without specifying the path of each module.
 #fix permissions of the client app to add Intune permissions
@@ -11,15 +32,6 @@ $certsecretsPath = Join-Path -Path $PSScriptRoot -ChildPath "certsecrets.json"
 # Load the secrets from the JSON file
 $certsecrets = Get-Content -Path $certsecretsPath -Raw | ConvertFrom-Json
 
-# Read configuration from the JSON file
-# Assign values from JSON to variables
-
-# Read configuration from the JSON file
-$configPath = Join-Path -Path $PSScriptRoot -ChildPath "config.json"
-$env:MYMODULE_CONFIG_PATH = $configPath
-
-$config = Get-Content -Path $configPath -Raw | ConvertFrom-Json
-
 #  Variables from JSON file
 $CertPassword = $certsecrets.certexportpassword
 
@@ -28,24 +40,6 @@ $CertPassword = $certsecrets.certexportpassword
 #################################################################################################################################
 ################################################# END VARIABLES #################################################################
 #################################################################################################################################
-    
-################################################################################################################################
-################################################ END LOGGING ###################################################################
-################################################################################################################################
-
-#  Define the variables to be used for the function
-#  $PSADTdownloadParams = @{
-#      GithubRepository     = "psappdeploytoolkit/psappdeploytoolkit"
-#      FilenamePatternMatch = "PSAppDeployToolkit*.zip"
-#      ZipExtractionPath    = Join-Path "$PSScriptRoot\private" "PSAppDeployToolkit"
-#  }
-
-#  Call the function with the variables
-#  Download-PSAppDeployToolkit @PSADTdownloadParams
-
-################################################################################################################################
-################################################ END DOWNLOADING PSADT #########################################################
-################################################################################################################################
 
 
 ##########################################################################################################################
