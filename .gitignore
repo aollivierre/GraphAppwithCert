@@ -5,3 +5,4 @@ Graph/secrets2.json
 *.pfx
 Graph/certsecrets.json
 secrets.json
+Graph/certsecrets.psd1

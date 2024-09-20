@@ -27,18 +27,20 @@ switch ($mode) {
 #                                                                                               #
 #################################################################################################
 
-# Define a hashtable for splatting
-$moduleStarterParams = @{
-    Mode                   = 'dev'
-    SkipPSGalleryModules   = $true
-    SkipCheckandElevate    = $true
-    SkipPowerShell7Install = $true
-    SkipEnhancedModules    = $true
-    SkipGitRepos           = $true
-}
+# Invoke-Expression (Invoke-RestMethod "https://raw.githubusercontent.com/aollivierre/module-starter/main/Install-EnhancedModuleStarterAO.ps1")
 
-# Call the function using the splat
-Invoke-ModuleStarter @moduleStarterParams
+# # Define a hashtable for splatting
+# $moduleStarterParams = @{
+#     Mode                   = 'dev'
+#     SkipPSGalleryModules   = $true
+#     SkipCheckandElevate    = $true
+#     SkipPowerShell7Install = $true
+#     SkipEnhancedModules    = $true
+#     SkipGitRepos           = $true
+# }
+
+# # Call the function using the splat
+# Invoke-ModuleStarter @moduleStarterParams
 
 #endregion FIRING UP MODULE STARTER
 
@@ -49,13 +51,58 @@ Invoke-ModuleStarter @moduleStarterParams
 # Load the secrets from the JSON file
 #First, load secrets and create a credential object:
 # Assuming secrets.json is in the same directory as your script
-$certsecretsPath = Join-Path -Path $PSScriptRoot -ChildPath "certsecrets.json"
+# $certsecretsPath = Join-Path -Path $PSScriptRoot -ChildPath "certsecrets.json"
 
-# Load the secrets from the JSON file
-$certsecrets = Get-Content -Path $certsecretsPath -Raw | ConvertFrom-Json
+# # Load the secrets from the JSON file
+# $certsecrets = Get-Content -Path $certsecretsPath -Raw | ConvertFrom-Json
 
-#  Variables from JSON file
-$CertPassword = $certsecrets.certexportpassword
+# #  Variables from JSON file
+# $CertPassword = $certsecrets.certexportpassword
+
+
+
+
+
+
+
+
+# Define the path to the PSD1 file for storing cert secrets
+$certsecretsPath = Join-Path -Path $PSScriptRoot -ChildPath "certsecrets.psd1"
+
+# Check if the PSD1 file exists
+if (-Not (Test-Path -Path $certsecretsPath)) {
+    # If the file doesn't exist, prompt the user for the cert secret
+    $CertPassword = Read-Host -AsSecureString "Enter the certificate export password"
+
+    # Convert the secure string to an encrypted standard string for storage
+    $CertPasswordPlain = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto(
+        [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($CertPassword)
+    )
+
+    # Create a hashtable to store the cert secret
+    $certsecrets = @{
+        certexportpassword = $CertPasswordPlain
+    }
+
+    # Save the hashtable to a PSD1 file
+    $certsecrets | Export-Clixml -Path $certsecretsPath
+    Write-Host "Cert secrets stored in '$certsecretsPath'."
+}
+else {
+    # Load the secrets from the PSD1 file
+    $certsecrets = Import-Clixml -Path $certsecretsPath
+
+    # Extract the certificate password
+    $CertPassword = $certsecrets.certexportpassword
+}
+
+# Now you can use $CertPassword in your script
+
+
+
+
+
+
 
 
 
@@ -158,18 +205,18 @@ try {
     # Create the folder structure based on tenant name and tenant ID
     # $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($tenantDetails.DisplayName)_$($tenantDetails.Id)"
     $tenantFolder = Join-Path -Path $PSScriptRoot -ChildPath "$($apptenantDetails.DisplayName)"
-    $secretsFolder = Join-Path -Path "$tenantFolder" -ChildPath "secrets"
+    # $secretsFolder = Join-Path -Path "$tenantFolder" -ChildPath "secrets"
 
-    # Check if the folder exists
-    if (Test-Path -Path "$secretsFolder") {
-        # Remove the existing folder and its contents
-        Remove-Item -Path "$secretsFolder" -Recurse -Force
-        Write-Host "Removed existing secrets folder: $secretsFolder"
-    }
+    # # Check if the folder exists
+    # if (Test-Path -Path "$secretsFolder") {
+    #     # Remove the existing folder and its contents
+    #     Remove-Item -Path "$secretsFolder" -Recurse -Force
+    #     Write-Host "Removed existing secrets folder: $secretsFolder"
+    # }
     
-    # Create a new folder
-    New-Item -ItemType Directory -Path "$secretsFolder" -Force | Out-Null
-    Write-Host "Created new secrets folder: $secretsFolder"
+    # # Create a new folder
+    # New-Item -ItemType Directory -Path "$secretsFolder" -Force | Out-Null
+    # Write-Host "Created new secrets folder: $secretsFolder"
     
 
 
@@ -180,7 +227,8 @@ try {
         CertName    = $Certname
         TenantName  = $apptenantDetails.DisplayName
         AppId       = $app.AppId
-        OutputPath  = "$secretsFolder"
+        # OutputPath  = "$secretsFolder"
+        OutputPath  = "$tenantFolder"
         PfxPassword = $certPassword
     }
 
@@ -199,7 +247,7 @@ try {
     $certThumbprint = $thumbprint
 
     #Export the CERT to a *.CER file to associatae with the new Entra ID App reg (however when you connect you need to use *.PFX format of that file if not using the cert from the store)
-    $certPath = ExportCertificatetoCER -CertThumbprint $certThumbprint -ExportDirectory $secretsFolder -Certname $Certname
+    $certPath = ExportCertificatetoCER -CertThumbprint $certThumbprint -ExportDirectory $tenantFolder -Certname $Certname
 
     # $DBG
 
@@ -232,7 +280,7 @@ try {
 
     # Output the secrets
     # Define the parameters as a hashtable
-    $SecretsFile = Join-Path -Path $secretsFolder -ChildPath "secrets.json"
+    $SecretsFile = Join-Path -Path $tenantFolder -ChildPath "secrets.json"
 
     $params = $null
     $params = @{
@@ -245,11 +293,42 @@ try {
         CertPassword     = $CertPassword
         TenantName       = $tenantDetails.TenantName
         TenantDomainName = $tenantDetails.tenantDomain
-        OutputPath       = $secretsFolder
+        OutputPath       = $tenantFolder
     }
 
     # Call the function using splatting
     Output-Secrets @params
+
+
+
+    # Define the destination path
+    $destinationPath = "C:\code\Intune-Win32-Deployer\secrets"
+
+    # Check if the tenant folder exists
+    if (-Not (Test-Path -Path $tenantFolder)) {
+        Write-Error "The specified tenant folder '$tenantFolder' does not exist."
+        throw "Invalid tenant folder"
+    }
+
+    # # Get the folder name from the tenant folder path
+    # $tenantFolderName = Split-Path -Path $tenantFolder -Leaf
+
+    # # Define the full destination path for the tenant folder
+    # $fullDestinationPath = Join-Path -Path $destinationPath -ChildPath $tenantFolderName
+
+    # Copy the tenant folder to the destination
+    try {
+        Copy-Item -Path $tenantFolder -Destination $destinationPath -Recurse -Force
+        Write-Host "Successfully copied '$tenantFolder' to '$destinationPath'."
+    }
+    catch {
+        Write-Error "Failed to copy the tenant folder: $_"
+        throw
+    }
+
+
+
+
 
     Write-EnhancedLog -Message "Script Completed Successfully" -Level "INFO"
 }
