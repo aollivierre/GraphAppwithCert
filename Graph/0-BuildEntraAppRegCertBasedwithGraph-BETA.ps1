@@ -29,13 +29,13 @@ switch ($mode) {
 
 # Invoke-Expression (Invoke-RestMethod "https://raw.githubusercontent.com/aollivierre/module-starter/main/Install-EnhancedModuleStarterAO.ps1")
 
-# # Define a hashtable for splatting
+# Define a hashtable for splatting
 # $moduleStarterParams = @{
-#     Mode                   = 'dev'
-#     SkipPSGalleryModules   = $true
-#     SkipCheckandElevate    = $true
-#     SkipPowerShell7Install = $true
-#     SkipEnhancedModules    = $true
+#     Mode                   = 'prod'
+#     SkipPSGalleryModules   = $false
+#     SkipCheckandElevate    = $false
+#     SkipPowerShell7Install = $false
+#     SkipEnhancedModules    = $false
 #     SkipGitRepos           = $true
 # }
 
@@ -99,13 +99,6 @@ else {
 # Now you can use $CertPassword in your script
 
 
-
-
-
-
-
-
-
 #################################################################################################################################
 ################################################# END VARIABLES #################################################################
 #################################################################################################################################
@@ -130,7 +123,9 @@ $scopes = $jsonContent.Scopes -join " "
 
 # Connect to Microsoft Graph with the specified scopes
 # Connect to Graph interactively
+disconnect-Graph
 Disconnect-MgGraph -Verbose
+disconnect-Graph
 
 # Call the function to connect to Microsoft Graph
 Connect-ToMicrosoftGraphIfServerCore -Scopes $scopes
