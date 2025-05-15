@@ -68,7 +68,7 @@ function Write-BuildEntraAppRegCertBasedLog {
             "DEBUG" { Write-Host $formattedMessage -ForegroundColor DarkGray }
             "INFO" { Write-Host $formattedMessage -ForegroundColor Green }
             "NOTICE" { Write-Host $formattedMessage -ForegroundColor Cyan }
-            "WARNING" { Write-Host $formattedMessage -ForegroundColor Yellow }
+            "WARNING" { Write-Host $formattedMessage -ForegroundColor Yellow } 
             "ERROR" { Write-Host $formattedMessage -ForegroundColor Red }
             "CRITICAL" { Write-Host $formattedMessage -ForegroundColor Magenta }
             default { Write-Host $formattedMessage -ForegroundColor White }
@@ -94,11 +94,11 @@ function Write-BuildEntraAppRegCertBasedLog {
 
 # Invoke-Expression (Invoke-RestMethod "https://raw.githubusercontent.com/aollivierre/module-starter/main/Install-EnhancedModuleStarterAO.ps1")
 
-# Wait-Debugger
+# # Wait-Debugger
 
 # Import-Module 'C:\code\ModulesV2\EnhancedModuleStarterAO\EnhancedModuleStarterAO.psm1'
 
-# Define a hashtable for splatting
+# # Define a hashtable for splatting
 # $moduleStarterParams = @{
 #     Mode                   = $global:mode
 #     SkipPSGalleryModules   = $false
