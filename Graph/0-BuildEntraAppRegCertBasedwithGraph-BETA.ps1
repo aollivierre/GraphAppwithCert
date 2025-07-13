@@ -1,4 +1,4 @@
-$global:mode = 'dev'
+$global:mode = 'prod'
 $global:SimulatingIntune = $false
 # $ExitOnCondition = $false
 
@@ -630,16 +630,22 @@ try {
         throw "Invalid tenant folder"
     }
 
-    # # Get the folder name from the tenant folder path
-    # $tenantFolderName = Split-Path -Path $tenantFolder -Leaf
+    # Get the folder name from the tenant folder path
+    $tenantFolderName = Split-Path -Path $tenantFolder -Leaf
 
-    # # Define the full destination path for the tenant folder
-    # $fullDestinationPath = Join-Path -Path $destinationPath -ChildPath $tenantFolderName
+    # Define the full destination path for the tenant folder
+    $fullDestinationPath = Join-Path -Path $destinationPath -ChildPath $tenantFolderName
 
     # Copy the tenant folder to the destination
     try {
-        Copy-Item -Path $tenantFolder -Destination $destinationPath -Recurse -Force
-        Write-Host "Successfully copied '$tenantFolder' to '$destinationPath'."
+        # Create the destination directory if it doesn't exist
+        if (-not (Test-Path -Path $destinationPath)) {
+            New-Item -ItemType Directory -Path $destinationPath -Force | Out-Null
+        }
+        
+        # Copy the entire tenant folder (not just its contents) to the destination
+        Copy-Item -Path $tenantFolder -Destination $fullDestinationPath -Recurse -Force
+        Write-Host "Successfully copied '$tenantFolder' to '$fullDestinationPath'."
     }
     catch {
         Write-Error "Failed to copy the tenant folder: $_"
