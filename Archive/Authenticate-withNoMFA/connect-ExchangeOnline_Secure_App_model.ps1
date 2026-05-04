@@ -6,7 +6,7 @@ $refresh_token = New-PartnerAccessToken -Module ExchangeOnline
 
 $customerId = '<CustomerId>'
 $customerDomainName = '<CustomerDomainName>'
-# $refreshToken = '<RefreshTokenValue>'
+# $refreshToken = '<REDACTED>'
 $refreshToken = $refreshToken
 $upn = '<UPN-used-to-generate-the-refresh-token>'
 

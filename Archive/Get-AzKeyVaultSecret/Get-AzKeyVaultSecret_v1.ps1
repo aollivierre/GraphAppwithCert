@@ -1,4 +1,4 @@
-<#      
+﻿<#      
 .NOTES
 #===========================================================================  
 # Script:  
@@ -143,7 +143,7 @@ function Get-AzureKeyVaultSecret {
         # $Secret = Read-Host -Prompt "Enter password" -AsSecureString
         # $Secret = Get-Credential
 
-        # $Secret = 'Whatever your password is'
+        # $Secret = '<REDACTED>'
         # $SecretValue = ConvertTo-SecureString -String $Secret
 
 

@@ -58,5 +58,5 @@ function Grant-AdminConsentToDelegatedPermissions {
 }
 
 # Example usage
-# $accessToken = "your-access-token"
+# $accessToken = "<REDACTED>"
 # Grant-AdminConsentToDelegatedPermissions -AppId "08216f27-1d3d-4a9f-9406-80f957e7fca6" -Permissions "User.Read.All Group.Read.All" -AccessToken $accessToken

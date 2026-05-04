@@ -1,4 +1,4 @@
-
+﻿
 # Set ScripRoot variable to the path which the script is executed from
 $ScriptRoot3 = $null
 $ScriptRoot3 = if ($PSVersionTable.PSVersion.Major -lt 3) {
@@ -47,7 +47,7 @@ function Encrypt-Secret {
         $Secret_File_1 = "$ScriptRoot3\$($Description)_Secret.txt"
         $Key_File_1 = "$ScriptRoot3\$($Description)_AES.key"
         $Key_1 = Get-Content $Key_File_1
-        # $Secret = "Whatever your Secret is" | ConvertTo-SecureString -AsPlainText -Force
+        # $Secret = "<REDACTED>" | ConvertTo-SecureString -AsPlainText -Force
 
         
     }

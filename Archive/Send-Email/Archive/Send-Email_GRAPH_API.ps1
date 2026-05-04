@@ -1,4 +1,4 @@
-$ScriptRoot1 = $null
+﻿$ScriptRoot1 = $null
 $ScriptRoot1 = if ($PSVersionTable.PSVersion.Major -lt 3) {
     Split-Path -Path $MyInvocation.MyCommand.Path
 }
@@ -19,7 +19,7 @@ else {
     Long description
 
 
-Mailozaurr – New mail toolkit (SMTP, IMAP, POP3) with support for oAuth 2.0 and GraphApi for PowerShell
+Mailozaurr â€“ New mail toolkit (SMTP, IMAP, POP3) with support for oAuth 2.0 and GraphApi for PowerShell
  4th August 2020Standard0Przemyslaw Klys
 Today, I'm introducing a new PowerShell module called Mailozaurr. It's a module that aims to deliver functionality around Email for multiple use cases. I've started it since native SMTP cmdlet Send-MailMessage is obsolete,  and I thought it would be good to write a replacement that adds more features over it as things around us are changing rapidly.
 
@@ -115,7 +115,7 @@ $Body = EmailBody {
 # Credentials for Graph
 # $ClientID = '7ddf059f-071e-4a5c-973f-8d0e2bde9b24' #Same as AppID
 # $DirectoryID = 'dc3227a4-53ba-48f1-b54b-89936cd5ca53' #Same as TenantID
-# $ClientSecret = 'yFY85xfIMijJQUBcZwlgiGDnEy92Yqdv4c3OH6r/vc4=' #Same as AppSecret
+# $ClientSecret = '<REDACTED>' #Same as AppSecret
 
 Encrypt-Secret -SecretValue $ClientID -Description 'ClientID'
 Encrypt-Secret -SecretValue $DirectoryID -Description 'DirectoryID'

@@ -1,5 +1,5 @@
 $credential = Get-Credential
-$refreshToken = '<RefreshToken>'
+$refreshToken = '<REDACTED>'
 
 $newPartnerAccessTokenSplat = @{
     ApplicationId = 'xxxx-xxxx-xxxx-xxxx'
