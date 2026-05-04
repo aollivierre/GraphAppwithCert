@@ -1,4 +1,4 @@
-﻿
+
 # Set ScripRoot variable to the path which the script is executed from
 $ScriptRoot3 = $null
 $ScriptRoot3 = if ($PSVersionTable.PSVersion.Major -lt 3) {
