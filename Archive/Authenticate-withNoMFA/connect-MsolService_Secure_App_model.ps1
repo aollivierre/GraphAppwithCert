@@ -1,4 +1,4 @@
-$credential = Get-Credential
+﻿$credential = Get-Credential
 $refreshToken = '<REDACTED>'
 
 $newPartnerAccessTokenSplat = @{

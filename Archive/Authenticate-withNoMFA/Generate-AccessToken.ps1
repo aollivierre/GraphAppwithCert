@@ -1,4 +1,4 @@
-# Using the securely stored refresh token, generated through the consent step, you will request a new access token from Azure Active Directory. See refresh the access token for more information regarding the refresh token value.
+﻿# Using the securely stored refresh token, generated through the consent step, you will request a new access token from Azure Active Directory. See refresh the access token for more information regarding the refresh token value.
 
 #Exchange(Step 3 in the secure app model)(Access Token generation based on the Refresh token generated in step 1)
 

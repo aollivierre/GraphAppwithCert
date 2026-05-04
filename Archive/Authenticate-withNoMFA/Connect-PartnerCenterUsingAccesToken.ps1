@@ -1,4 +1,4 @@
-function Connect-PartnerCenterUsingAccesstoken {
+﻿function Connect-PartnerCenterUsingAccesstoken {
     [CmdletBinding()]
     param (
         
