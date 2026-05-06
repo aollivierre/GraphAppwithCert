@@ -341,7 +341,7 @@ $token = Get-MsalToken @connectionDetails
 
 #The above code is for interactive and it pops up a window to login (not a browser) but it returns the following error
 
-# Sorry, but we’re having trouble signing you in.
+# Sorry, but we're having trouble signing you in.
 # AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: 'ef10965f-e08c-410a-a7c7-759fde63edd1'. 
 # Troubleshooting details
 # If you contact your administrator, send this info to them.
