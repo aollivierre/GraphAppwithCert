@@ -10,7 +10,7 @@ function Connect-PartnerCenterUsingAccesstoken {
         # $ApplicationId_7001 = "0d32e246-74a4-4930-af3f-4972652d75bb"
 
         # $ApplicationSecret_7001 = $null
-        # $ApplicationSecret_7001 = "9Ifl1NCGNlytwF8F62mwROkSRypwLvvOIlzWMPTJJpc="
+        # $ApplicationSecret_7001 = "<APPLICATION_SECRET_PLACEHOLDER>"
 
         $TenantID_7001 = $null
         $TenantID_7001 = "dc3227a4-53ba-48f1-b54b-89936cd5ca53"
