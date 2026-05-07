@@ -1,3 +1,3 @@
-﻿#initial refresh token
+#initial refresh token
 
 <REDACTED-REFRESH-TOKEN>

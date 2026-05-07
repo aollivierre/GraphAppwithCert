@@ -1,4 +1,4 @@
-﻿$refresh_token = New-PartnerAccessToken -Module ExchangeOnline
+$refresh_token = New-PartnerAccessToken -Module ExchangeOnline
 
 
 

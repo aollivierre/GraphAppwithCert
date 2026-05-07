@@ -204,7 +204,7 @@ New-NetFirewallRule @newNetFirewallRuleSplat
 
 # Connecting to the server
 # Finding Host Key
-# Before the first connection, find out fingerprint of the server’s host key by using ssh-keygen.exe for each file.
+# Before the first connection, find out fingerprint of the server[U+2019]s host key by using ssh-keygen.exe for each file.
 
 # In Windows command-prompt, use:
 
